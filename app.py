@@ -248,8 +248,7 @@ preprocessor = Pipeline(steps=[
 ])
 
 #read the training data
-path = r"D:\Data Science\Machine Learning\Flight Price Prediction using AWS Sagemaker\Datasets\train.csv"
-train = pd.read_csv(path)
+train = pd.read_csv("train.csv")
 X_train = train.drop(columns="price")
 y_train = train.price.copy()
 
